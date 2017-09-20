@@ -1,0 +1,43 @@
+{% block title %}
+<CENTER>INICIAR SESION</CENTER>
+{% endblock %}
+{% block content %}
+
+<center>
+<form method="post">
+    {% csrf_token %}
+     <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <br><label for="username">Nombre de usuario:</label>
+                <input class="form-control" type="text" name="username">
+           </div>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <br><label for="username">Contraseña:</label>
+                <input class="form-control" type="password" name="password">
+           </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <a href=" ">Olvidé mi contraseña</a><br>
+                <br><input class="btn btn-primary" type="submit" value="Ingresar">
+                <input type="button" name="Cancelar" value="Cancelar"onClick="location.href='../../principal'">
+
+               
+           </div>
+        </div>
+    </div>
+</form>
+</center>
+
+
+
+{% endblock %}
+
+ 

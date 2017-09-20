@@ -67,10 +67,14 @@ ul, ol {
 	<meta charset="UTF-8">
 
 	{% block extrastatic %}
+	<link rel = "stylesheet" href="{% static 'css/estilo_obscuro.css' %} "/>
 	{% endblock %}
 
 	
 	<link rel = "stylesheet" href="{% static 'css/bootstrap.css' %} "/>
+	<link rel = "stylesheet" href="{% static 'css/barra.css' %} "/>
+
+
 
 
 	<title> CDINTE-Centro de Innovación Tecnológica :: CDINTE</title>
@@ -101,6 +105,7 @@ ul, ol {
 				    </div>
 				<div class= "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				    <ul class="nav navbar-nav">
+				    	
 				    <li class="page-header"><a href=" ../principal" <input type=image src="../static/cdinte_letra.gif" width="25" height="15">CDINTE</a></li>
 					<li class="page-header"><a href=" ../nosotros">¿Quienes Somos?</a></li>
 
@@ -110,7 +115,7 @@ ul, ol {
 							<li class="page-header"><a href=" ../productos_servicios ">Consultorias</a>
 
 							<ul>
-								<li><a><br>CONSULTORIAS<br>Te ayudamos en el uso de las tecnológias de la información para que tu empresa tenga mayor posibilidad de desarrollo<br> y competividad en el mercado.Brindamos cursos y asesorías sobre Paquetería Informática y el manejo de Redes Sociales<br>que permita automatizar las tareas de los trabajadores, así como la difusión de los servicios o productos, respectivamente.</a><center><img src="../static/img/consultoria.jpg";/></center></li>
+								<li><a><br>CONSULTORIAS<br>Te ayudamos en el uso de las tecnológias de la información para que tu empresa tenga mayor posibilidad de desarrollo<br> y competividad en el mercado.Brindamos cursos y asesorías sobre Paquetería Informática y el manejo de Redes Sociales<br>que permita automatizar las tareas de los trabajadores, así como la difusión de los servicios o productos, respectivamente.<center><img src="../static/img/consultoria.jpg";/></center></a></li>
 
 							</ul> 
 							</li>
@@ -118,7 +123,7 @@ ul, ol {
 							<li class="page-header"><a href=" ../productos_servicios ">Desarrollo de Software</a>   
 								<ul>
 								<li><a href=""><baner><br>DESARROLLO DE SOFTWARE<br>Te ofrecemos soluciones de software innovadoras hechas a la medida de tus necesidades. A través de un sistema de &nbsp;<br> información optimizamos los procesos de tu empresa; por medio de la recopilación, análisis, integración y procesamiento<br> de la información, te brindamos herramientas que te permitan el ahorro de tiempo y costo en tus operaciones.</baner>
-								</a><center><img src="../static/img/desarrollo_software.jpg";/></center></li>
+								<center><img src="../static/img/desarrollo_software.jpg";/></center></a></li>
 
 							</ul> 
 
@@ -126,7 +131,7 @@ ul, ol {
 							<li class="page-header"><a href=" ../productos_servicios ">Desarrollo Web</a>
 								<ul>
 								<li><a href=""><baner><br>DESARROLLO WEB<br>A través del diseño de Páginas Web te< introducimos al Marketing Digital, posicionando tu marca de manera atractiva y<br> accesible a tus clientes potenciales, brindando mayor formalidad y acrecentando las posibilidades de contratos<br> comerciales.</baner>
-								</a><center><img src="../static/img/diseno-web.jpg";/></center></li>
+								<center><img src="../static/img/diseno-web.jpg";/></center></a></li>
 
 							</ul> 
 
@@ -186,21 +191,47 @@ ul, ol {
 
 					 </ul>
 
-                                <ul class = "nav navbar-nav navbar-right"> 
+
+
+
+
+
+                                <ul class = "nav navbar-nav navbar-right">
+
+
+                                	<li>
+
+									<div class="flexsearch">
+										<div class="flexsearch--wrapper">
+											<form class="flexsearch--form" action="#" method="post">
+												<div class="flexsearch--input-wrapper">
+												<input class="flexsearch--input" type="search" placeholder="Buscar">
+												</div>
+											<input class="flexsearch--submit" type="submit" value="&#10140;"/>
+											</form>
+										</div>
+									</div>
+									</li>
+
+
+                                <li class="dropdown"><a href="{% url 'logout' %}"
+                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/administrador.png"; title="Administrador"/></a> 
+
+
+
                                 <li class="dropdown"><a href="https://www.facebook.com/CDINTE.HGO/"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/facebook.png";/>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/facebook.png"; title="Facebook"/></a>
 
                                 
                                 <li class="dropdown"><a href="https://twitter.com/cdinte_hgo?lang=es"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/twitter.png";/>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/twitter.png"; title="Twitter"/></a>
 
                                 <li class="dropdown"><a href="mailto:cdinte.hgo@gmail.com"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/gmail.png";/>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/gmail.png"; title="Correo"/></a>
 
                                 
-                                <li class="page-header"><a href=" ../iniciar_sesion ">Administrador</a></li>
-
-                                </ul>
+                              
+                              	</ul>
 
 
 
