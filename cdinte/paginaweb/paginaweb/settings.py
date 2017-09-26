@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.informacion',
     'apps.principal',
+    'apps.principal_administrador',
     'apps.quienes_somos',
     'apps.productosServicios',
     'apps.cursos',
@@ -141,4 +143,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 
-LOGIN_REDIRECT_URL = reverse_lazy('principal')
+LOGIN_REDIRECT_URL = reverse_lazy('principal_administrador:principal_index')
