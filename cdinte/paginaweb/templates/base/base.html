@@ -67,12 +67,14 @@ ul, ol {
 	<meta charset="UTF-8">
 
 	{% block extrastatic %}
-	<link rel = "stylesheet" href="{% static 'css/estilo_obscuro.css' %} "/>
+
 	{% endblock %}
+
 
 	
 	<link rel = "stylesheet" href="{% static 'css/bootstrap.css' %} "/>
 	<link rel = "stylesheet" href="{% static 'css/barra.css' %} "/>
+	
 
 
 
@@ -201,22 +203,17 @@ ul, ol {
 
                                 	<li>
 
-									<div class="flexsearch">
-										<div class="flexsearch--wrapper">
-											<form class="flexsearch--form" method="POST"action="/informacion/buscar/">{% csrf_token %}
+									<div  class="busqueda">
+										<form class="navbar-search pull-left" method="POST" action="/informacion/buscar/">{% csrf_token %}
 
-												<div class="flexsearch--input-wrapper">
-												<input class="flexsearch--input" type="search" placeholder="Buscar" name="buscalo">
-												</div>
-											<input class="flexsearch--submit" type="submit" value="&#10140;"/>
-											</form>
-										</div>
+											<input  type="text" name="buscalo" class="search-query" placeholder="Buscar">
+											<button class="btn btn-primary"type="text" ><img src="../static/img/icons/busqueda.jpg";title="Buscar"/></button>
+											<div class="btn-group">
+												
+											</div>
+										</form>
 									</div>
 									</li>
-
-
-                                <li class="dropdown"><a href="{% url 'logout' %}"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/administrador.png"; title="Administrador"/></a> 
 
 
 
