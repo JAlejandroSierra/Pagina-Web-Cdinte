@@ -1,4 +1,4 @@
-{% extends 'base/base.html' %}
+{% extends 'base/base_administrador.html' %}
 {% block title %}CDINTE Principal Administrador{% endblock %}
 {% block content %}
 
@@ -15,6 +15,7 @@ class="ibm-alternate" style="background-image: url(../static/img/fondo_quienes.j
 <h3>Bienvenido Administrador: {{ user.get_username }}</h3>
 
 
+<center><a href="/../../usuario/registrar"onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/agregar_administrador.png"; title="Nuevo Administrador"/></a> </center>
 
 
 </body>

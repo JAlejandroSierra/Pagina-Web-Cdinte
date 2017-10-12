@@ -1,7 +1,10 @@
+{% extends 'base/estilo.html' %}
+
 {% block content %}
 <form method="post">
 	{% csrf_token %}
-	
+	<center>
+
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="form-group">
@@ -38,7 +41,7 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="form-group">
 				<label >Contraseña</label>
-				<input class="form-control" type="password" name="password1">
+				<input class="form-control" type="password" name="password">
 			</div>
 		</div>
 	</div>
@@ -46,18 +49,26 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="form-group">
 				<label >Confirmar contraseña</label>
-				<input class="form-control" type="password" name="password2">
+				<input class="form-control" type="password" name="password">
 			</div>
 		</div>
 	</div>
-	
+		
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="form-group">
-				<button class="btn btn-primary "type="submit">Guardar</button>
+				<button class="btn btn-primary "type="submit"
+				{% if user.is_authenticated %}
+        HTML for my items list
+    {% else %}
+        HTML for my login form
+    {% endif %}	>Guardar </button>
+				<input type="button" name="Cancelar" value="Cancelar"onClick="location.href='../../principal_administrador'">
 			</div>
 		</div>
 	</div>
 	
 </form>
+
+</center>
 {% endblock %}

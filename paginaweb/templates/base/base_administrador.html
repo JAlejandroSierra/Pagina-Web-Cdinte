@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="shortcut icon" href="../static/img/icons/cdinte.jpg">
+<link rel="shortcut icon" href="../../../static/img/icons/cdinte.jpg">
 	<style type="text/css">
 	*{
 		padding: 0px;
@@ -21,7 +21,7 @@ ul, ol {
 	list-style:none;
 }
 .nav li a{
-	background-image: url(../static/img/fondo_barra2.jpg);
+	background-image: url(../../../static/img/fondo_barra2.jpg);
 	color: #000;
 	text-decoration:none;
 	padding:10px 15px;
@@ -31,7 +31,7 @@ ul, ol {
 
 .nav li a:hover {
 
-	background-image: url(../static/img/fondo1.jpg); 
+	background-image: url(../../../static/img/fondo1.jpg); 
 }
 
 .nav > li {
@@ -58,7 +58,7 @@ ul, ol {
 	top:2px; 
 }
     body {
-        background-image: url(../static/img/fondo1.jpg);
+        background-image: url(../../../static/img/fondo1.jpg);
         
     }
     
@@ -73,7 +73,7 @@ ul, ol {
 
 	
 	<link rel = "stylesheet" href="{% static 'css/bootstrap.css' %} "/>
-	<link rel = "stylesheet" href="{% static 'css/barra.css' %} "/>
+	<link rel = "stylesheet" href="{% static '../../../css/barra.css' %} "/>
 	
 
 
@@ -84,7 +84,7 @@ ul, ol {
 
 	{% block navbar %}
 
-		<img src="../static/img/barra_arriba.jpg";>
+		<img src="../../../static/img/barra_arriba.jpg";>
         {% endblock %}
 
 <div class= "container">
@@ -108,8 +108,8 @@ ul, ol {
 				<div class= "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				    <ul class="nav navbar-nav">
 				    	
-				    <li class="page-header"><a href=" ../principal" <input type=image src="../static/cdinte_letra.gif" width="25" height="15">CDINTE</a></li>
-					<li class="page-header"><a href=" ../nosotros">¿Quienes Somos?</a></li>
+				    <li class="page-header"><a href=" ../../principal" <input type=image src="../static/cdinte_letra.gif" width="25" height="15">CDINTE</a></li>
+					<li class="page-header"><a href=" ../../nosotros">¿Quienes Somos?</a></li>
 
 				
 					<li class="page-header"><a href="">Productos</a>
@@ -117,7 +117,7 @@ ul, ol {
 							<li class="page-header"><a href=" ../productos_servicios ">Consultorias</a>
 
 							<ul>
-								<li><a><br>CONSULTORIAS<br>Te ayudamos en el uso de las tecnológias de la información para que tu empresa tenga mayor posibilidad de desarrollo<br> y competividad en el mercado.Brindamos cursos y asesorías sobre Paquetería Informática y el manejo de Redes Sociales<br>que permita automatizar las tareas de los trabajadores, así como la difusión de los servicios o productos, respectivamente.<center><img src="../static/img/consultoria.jpg";/></center></a></li>
+								<li><a><br>CONSULTORIAS<br>Te ayudamos en el uso de las tecnológias de la información para que tu empresa tenga mayor posibilidad de desarrollo<br> y competividad en el mercado.Brindamos cursos y asesorías sobre Paquetería Informática y el manejo de Redes Sociales<br>que permita automatizar las tareas de los trabajadores, así como la difusión de los servicios o productos, respectivamente.<center><img src="../../../static/img/consultoria.jpg";/></center></a></li>
 
 							</ul> 
 							</li>
@@ -145,7 +145,7 @@ ul, ol {
 								<ul>
 								<li><a href=""><baner><br>APLICACIONES MOVILES<br>La telefonía móvil se ha convertido en un nuevo mercado para los diversos sectores,con lo que podrás colocar a tu <br> empresa o marca al alcance de los usuarios, las 24 horas del día, agilizando los tiempos de respuesta y mejorando<br> el servicio. Así mismo, contamos con tecnología de vanguardia como la Realidad Aumentada, que te ayudará<br> a diversificar estrategias de publicidad, y la Realidad Virtual que permitirá simular experiencias de usuario<br> (recorridos virtuales, videos 360), logrando un mayor impacto en el mercado.
 </baner>
-								</a><center><img src="../static/img/aplicaciones_moviles.jpg";/></center></li>
+								</a><center><img src="../../../static/img/aplicaciones_moviles.jpg";/></center></li>
 
 							</ul> 
 
@@ -207,7 +207,7 @@ ul, ol {
 										<form class="navbar-search pull-left" method="POST" action="/informacion/buscar/">{% csrf_token %}
 
 											<input  type="text" name="buscalo" class="search-query" placeholder="Buscar">
-											<button class="btn btn-primary"type="text" ><img src="../static/img/icons/busqueda.jpg";title="Buscar"/></button>
+											<button class="btn btn-primary"type="text" ><img src="../../../static/img/icons/busqueda.jpg";title="Buscar"/></button>
 											<div class="btn-group">
 												
 											</div>
@@ -216,20 +216,20 @@ ul, ol {
 									</li>
 
 
-                                <li class="dropdown"><a href="{% url 'logout' %}"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/administrador.png"; title="Administrador"/></a> 
+									<li class="dropdown"><a href="{% url 'logout' %}"
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/administrador.png"; title="Administrador"/></a> 
 
 
 
                                 <li class="dropdown"><a href="https://www.facebook.com/CDINTE.HGO/"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/facebook.png"; title="Facebook"/></a>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/facebook.png"; title="Facebook"/></a>
 
                                 
                                 <li class="dropdown"><a href="https://twitter.com/cdinte_hgo?lang=es"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/twitter.png"; title="Twitter"/></a>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/twitter.png"; title="Twitter"/></a>
 
                                 <li class="dropdown"><a href="mailto:cdinte.hgo@gmail.com"
-                                onclick="pageTracker._link(this.href); return false;"><img src="../static/img/icons/gmail.png"; title="Correo"/></a>
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/gmail.png"; title="Correo"/></a>
 
                                 
                               

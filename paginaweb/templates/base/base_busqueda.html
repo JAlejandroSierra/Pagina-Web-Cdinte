@@ -1,0 +1,278 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="shortcut icon" href="../../../static/img/icons/cdinte.jpg">
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#header {
+	margin:auto;
+	width: 500px;
+	font-family: Arial, Helvetica, sans-serif;
+
+	}
+
+ul, ol {
+
+	list-style:none;
+}
+.nav li a{
+	background-image: url(../../../static/img/fondo_barra2.jpg);
+	color: #000;
+	text-decoration:none;
+	padding:10px 15px;
+	display:block;     
+
+}
+
+.nav li a:hover {
+
+	background-image: url(../../../static/img/fondo1.jpg); 
+}
+
+.nav > li {
+	float:left;
+}
+
+.nav li ul {
+	display:none;
+	position: absolute;
+	min-width:140px; 
+}
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+
+	position: relative;
+
+}
+
+.nav li ul li ul {
+	right:-905px;
+	top:2px; 
+}
+    body {
+        background-image: url(../../../static/img/fondo1.jpg);
+        
+    }
+    
+</style>
+
+	<meta charset="UTF-8">
+
+	{% block extrastatic %}
+
+	{% endblock %}
+
+
+	
+	<link rel = "stylesheet" href="{% static 'css/bootstrap.css' %} "/>
+	<link rel = "stylesheet" href="{% static '../../../css/barra.css' %} "/>
+	
+
+
+
+
+	<title> CDINTE-Centro de Innovación Tecnológica :: CDINTE</title>
+    </head>
+
+	{% block navbar %}
+
+		<img src="../../../static/img/barra_arriba.jpg";>
+        {% endblock %}
+
+<div class= "container">
+	{% block navbar1 %}
+
+
+
+
+
+      
+	    <div class ="bs-docs-sextion clearfix">
+		<div class = "row">
+		    <div class= "clo-lg-12">
+			<div class = "bs-component">
+			     <nav class="navbar navbar-default">
+				<div class="container-fluid">
+				    <div class="nevbar-header">
+				    
+
+				    </div>
+				<div class= "collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav">
+				    	
+				    <li class="page-header"><a href=" ../../principal" <input type=image src="../static/cdinte_letra.gif" width="25" height="15">CDINTE</a></li>
+					<li class="page-header"><a href=" ../../nosotros">¿Quienes Somos?</a></li>
+
+				
+					<li class="page-header"><a href="">Productos</a>
+						<ul>
+							<li class="page-header"><a href=" ../productos_servicios ">Consultorias</a>
+
+							<ul>
+								<li><a><br>CONSULTORIAS<br>Te ayudamos en el uso de las tecnológias de la información para que tu empresa tenga mayor posibilidad de desarrollo<br> y competividad en el mercado.Brindamos cursos y asesorías sobre Paquetería Informática y el manejo de Redes Sociales<br>que permita automatizar las tareas de los trabajadores, así como la difusión de los servicios o productos, respectivamente.<center><img src="../../../static/img/consultoria.jpg";/></center></a></li>
+
+							</ul> 
+							</li>
+							
+							<li class="page-header"><a href=" ../productos_servicios ">Desarrollo de Software</a>   
+								<ul>
+								<li><a href=""><baner><br>DESARROLLO DE SOFTWARE<br>Te ofrecemos soluciones de software innovadoras hechas a la medida de tus necesidades. A través de un sistema de &nbsp;<br> información optimizamos los procesos de tu empresa; por medio de la recopilación, análisis, integración y procesamiento<br> de la información, te brindamos herramientas que te permitan el ahorro de tiempo y costo en tus operaciones.</baner>
+								<center><img src="../static/img/desarrollo_software.jpg";/></center></a></li>
+
+							</ul> 
+
+							</li>
+							<li class="page-header"><a href=" ../productos_servicios ">Desarrollo Web</a>
+								<ul>
+								<li><a href=""><baner><br>DESARROLLO WEB<br>A través del diseño de Páginas Web te< introducimos al Marketing Digital, posicionando tu marca de manera atractiva y<br> accesible a tus clientes potenciales, brindando mayor formalidad y acrecentando las posibilidades de contratos<br> comerciales.</baner>
+								<center><img src="../static/img/diseno-web.jpg";/></center></a></li>
+
+							</ul> 
+
+
+
+
+							</li>
+							<li class="page-header"><a href=" ../productos_servicios ">Aplicaciones Moviles</a>
+								<ul>
+								<li><a href=""><baner><br>APLICACIONES MOVILES<br>La telefonía móvil se ha convertido en un nuevo mercado para los diversos sectores,con lo que podrás colocar a tu <br> empresa o marca al alcance de los usuarios, las 24 horas del día, agilizando los tiempos de respuesta y mejorando<br> el servicio. Así mismo, contamos con tecnología de vanguardia como la Realidad Aumentada, que te ayudará<br> a diversificar estrategias de publicidad, y la Realidad Virtual que permitirá simular experiencias de usuario<br> (recorridos virtuales, videos 360), logrando un mayor impacto en el mercado.
+</baner>
+								</a><center><img src="../../../static/img/aplicaciones_moviles.jpg";/></center></li>
+
+							</ul> 
+
+
+
+							</li>
+						</ul>
+
+
+					</li>
+					<li class="page-header"><a href=" ">Servicios</a>
+
+						<ul>
+							 <li class="dropdown">
+							<li class="page-header"><a href=" ../productos_servicios ">Página Web Estatica</a>
+								<ul>
+								</li>
+
+							</ul> 
+
+
+
+							</li>
+							<li class="page-header"><a href=" ../productos_servicios ">Página Web Dinamica</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Sitio Web</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Aplicaciones Moviles</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Sistemas Integrales de Información</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Recorridos Virtuales</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Videos 360°</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Asesorias</a></li>
+							<li class="page-header"><a href=" ../productos_servicios ">Cursos de Capacitacion</a></li>
+						</ul>
+
+
+
+
+
+
+
+					</li>
+
+					 <!--<li class="page-header"><a href=" ../contacto ">Contacto</a></li>-->
+					 <!--<li class="page-header"><a href=" ../proyectos ">Proyectos</a></li>-->
+					
+
+					 </ul>
+
+
+
+
+
+
+                                <ul class = "nav navbar-nav navbar-right">
+
+
+                                	<li>
+
+									<div  class="busqueda">
+										<form class="navbar-search pull-left" method="POST" action="/informacion/buscar/">{% csrf_token %}
+
+											<input  type="text" name="buscalo" class="search-query" placeholder="Buscar">
+											<button class="btn btn-primary"type="text" ><img src="../../../static/img/icons/busqueda.jpg";title="Buscar"/></button>
+											<div class="btn-group">
+												
+											</div>
+										</form>
+									</div>
+									</li>
+
+
+							
+
+
+                                <li class="dropdown"><a href="https://www.facebook.com/CDINTE.HGO/"
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/facebook.png"; title="Facebook"/></a>
+
+                                
+                                <li class="dropdown"><a href="https://twitter.com/cdinte_hgo?lang=es"
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/twitter.png"; title="Twitter"/></a>
+
+                                <li class="dropdown"><a href="mailto:cdinte.hgo@gmail.com"
+                                onclick="pageTracker._link(this.href); return false;"><img src="../../../static/img/icons/gmail.png"; title="Correo"/></a>
+
+                                
+                              
+                              	</ul>
+
+
+
+					</li>
+					
+				</ul>
+			</div>
+		   </div>
+		</nav>
+	  </div>
+	</div>
+    </div>
+
+</div>
+
+</layer>
+
+        {% endblock %}
+
+        {% block header%}
+
+        
+
+       {% endblock %}
+
+	<script src = "http://code.jquery.com/jquery-1.10.2.min"></script>
+
+	{% block content %}
+
+	<h5>Contenido<h5>
+
+	{% endblock %}
+
+	{% block footer %}
+	
+	{% endblock %}
+
+	{% block redessociales %}
+
+	{% endblock%}
+
+
+</body>
+</html>
